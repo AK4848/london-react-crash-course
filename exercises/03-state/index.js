@@ -5,9 +5,15 @@ class HiddenMessage extends React.Component {
     super();
 
     // TODO implement this.state
-    this.state = {};
+    this.state = {label: "Show message",
+                  collapsed: true,
+                  msg: "hidden message"};
   }
   onClick(ev) {
+    this.setState({
+      collapsed: !this.state.collapsed,
+      label: this.state.collapsed ? "Hide message" : "Show message"
+    })
     // TODO set a new state
     // TODO `label` should reflect the state of the component with "Hide" or "Show"
     // TODO collapsed should be toggled
