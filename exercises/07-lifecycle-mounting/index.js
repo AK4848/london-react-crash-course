@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 
 class Count extends React.Component {
   constructor() {
@@ -10,9 +11,12 @@ class Count extends React.Component {
   }
   componentWillMount() {
     console.clear();
-    // TODO
+      this.state.count++;
   }
   // TODO implement componentDidMount
+  componentDidMount(){
+    console.log(ReactDOM.findDOMNode(this));
+  }
   render() {
     console.log('rendering');
     return (

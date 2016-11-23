@@ -21,7 +21,8 @@ class Topics extends React.Component {
     let topics = [
   'Component',
   'Props',
-  'Composition'
+  'Composition',
+  'Que pasa'
 ]
   let maps = topics.map(function(n){
     return <List topic={n} />
